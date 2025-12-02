@@ -31,7 +31,7 @@ export function ContactForm() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">Bizi Arayın</p>
-                  <p className="text-xl font-bold text-white">+90 555 123 45 67</p>
+                  <p className="text-xl font-bold text-white">+90 535 034 77 52</p>
                 </div>
               </div>
               

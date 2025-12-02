@@ -57,7 +57,7 @@ export function Navbar() {
 
         {/* Call Button */}
         <Button asChild className="bg-yellow-500 hover:bg-yellow-600 text-white rounded-full px-6">
-          <Link href="tel:+905551234567" className="flex items-center gap-2">
+          <Link href="tel:+905350347752" className="flex items-center gap-2">
             <Phone className="w-4 h-4" />
             <span className="hidden sm:inline">Hemen Ara</span>
           </Link>

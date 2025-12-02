@@ -18,7 +18,7 @@ export function Footer() {
             </Link>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Profesyonel, güvenilir ve hızlı elektrik çözümleri. 
-              7/24 acil servis hizmetimizle yanınızdayız.
+              Her zaman yanınızdayız.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-500 hover:text-white transition-all duration-300">
@@ -63,9 +63,6 @@ export function Footer() {
                 <Link href="/hizmetler/installation" className="text-gray-400 hover:text-yellow-500 transition-colors">Montaj & Kurulum</Link>
               </li>
               <li>
-                <Link href="/hizmetler/smart-home-setup" className="text-gray-400 hover:text-yellow-500 transition-colors">Akıllı Ev Sistemleri</Link>
-              </li>
-              <li>
                 <Link href="/hizmetler/lighting-solutions" className="text-gray-400 hover:text-yellow-500 transition-colors">Aydınlatma</Link>
               </li>
             </ul>
@@ -84,7 +81,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-yellow-500 flex-shrink-0" />
-                <a href="tel:+905551234567" className="text-gray-400 hover:text-white transition-colors">+90 555 123 45 67</a>
+                <a href="tel:+905350347752" className="text-gray-400 hover:text-white transition-colors">+90 535 034 77 52</a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-yellow-500 flex-shrink-0" />
@@ -103,4 +100,3 @@ export function Footer() {
     </footer>
   );
 }
-
