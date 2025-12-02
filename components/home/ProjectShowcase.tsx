@@ -15,8 +15,8 @@ const projects = [
     id: 2,
     title: "Akıllı Ev Sistemi Kurulumu",
     category: "Konut",
-    imageBefore: "https://images.unsplash.com/photo-1558002038-1091a166111c?q=80&w=800&auto=format&fit=crop",
-    imageAfter: "https://images.unsplash.com/photo-1558002038-1091a166111c?q=80&w=800&auto=format&fit=crop", 
+    imageBefore: "https://images.unsplash.com/photo-1565514020125-2c66e7f96e8b?q=80&w=800&auto=format&fit=crop",
+    imageAfter: "https://images.unsplash.com/photo-1565514020125-2c66e7f96e8b?q=80&w=800&auto=format&fit=crop", 
     description: "Tüm evin aydınlatma ve ısıtma sistemleri tek bir merkezden kontrol edilebilir hale getirildi."
   }
 ];

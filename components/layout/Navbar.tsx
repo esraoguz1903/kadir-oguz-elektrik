@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
@@ -34,11 +35,16 @@ export function Navbar() {
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center">
-            <span className="text-white font-bold text-xl">E</span>
+          <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-yellow-500">
+            <Image 
+              src="/logo.jpg" 
+              alt="Oğuz Elektrik" 
+              fill 
+              className="object-cover"
+            />
           </div>
           <span className={cn("font-bold text-xl", isScrolled ? "text-gray-900" : "text-gray-900")}>
-            Elektrikçi
+            Oğuz Elektrik
           </span>
         </Link>
 
@@ -66,4 +72,3 @@ export function Navbar() {
     </header>
   );
 }
-
