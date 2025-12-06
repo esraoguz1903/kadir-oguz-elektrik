@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Badge } from "@/components/ui/badge";
 
 // Şimdilik placeholder görsel kullanıyoruz, daha sonra gerçek proje görselleri ile değiştirilebilir.
 const projects = [
