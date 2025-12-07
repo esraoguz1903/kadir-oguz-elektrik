@@ -35,12 +35,12 @@ export function Navbar() {
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-yellow-500">
+          <div className="relative h-12 w-12 md:h-14 md:w-14">
             <Image 
-              src="/logo.jpg" 
+              src="/logo.png" 
               alt="Oğuz Elektrik" 
               fill 
-              className="object-cover"
+              className="object-contain"
             />
           </div>
           <span className={cn("font-bold text-xl", isScrolled ? "text-gray-900" : "text-gray-900")}>

@@ -10,12 +10,12 @@ export function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center gap-2 mb-6">
-              <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-yellow-500">
+              <div className="relative h-12 w-12 md:h-14 md:w-14">
                 <Image 
-                  src="/logo.jpg" 
+                  src="/logo.png" 
                   alt="Oğuz Elektrik" 
                   fill 
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
               <span className="font-bold text-xl text-white">

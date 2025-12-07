@@ -31,12 +31,16 @@ export function Hero() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-white text-lg px-8 py-6">
-                Teklif Al
-                <ArrowRight className="ml-2 w-5 h-5" />
+              <Button asChild size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-white text-lg px-8 py-6">
+                <a href="#contact">
+                  Teklif Al
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </a>
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6 bg-white/80 backdrop-blur-sm">
-                Hizmetlerimiz
+              <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 bg-white/80 backdrop-blur-sm">
+                <a href="#services">
+                  Hizmetlerimiz
+                </a>
               </Button>
             </div>
           </motion.div>
