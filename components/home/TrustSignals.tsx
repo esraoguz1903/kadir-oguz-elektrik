@@ -3,7 +3,7 @@ import { Award, ThumbsUp } from "lucide-react";
 const signals = [
   {
     icon: Award,
-    title: "3+ Yıl Deneyim",
+    title: "2+ Yıl Deneyim",
     description: "Tecrübeli teknik ve mühendislik bakış açısı.",
   },
   {

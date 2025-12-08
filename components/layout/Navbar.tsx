@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Phone } from "lucide-react";
+import { Phone, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
@@ -58,13 +58,36 @@ export function Navbar() {
           </Link>
         </nav>
 
-        {/* Call Button */}
-        <Button asChild className="bg-yellow-500 hover:bg-yellow-600 text-white rounded-full px-6">
-          <Link href="tel:+905350347752" className="flex items-center gap-2">
-            <Phone className="w-4 h-4" />
-            <span className="hidden sm:inline">Hemen Ara</span>
-          </Link>
-        </Button>
+        {/* Call Button & Socials */}
+        <div className="flex items-center gap-4">
+          <Button asChild className="bg-yellow-500 hover:bg-yellow-600 text-white rounded-full px-6">
+            <Link href="tel:+905350347752" className="flex items-center gap-2">
+              <Phone className="w-4 h-4" />
+              <span className="hidden sm:inline">Hemen Ara</span>
+            </Link>
+          </Button>
+
+          <div className="flex items-center gap-3 pl-4 border-l border-gray-200 h-8">
+            <a 
+              href="https://instagram.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-yellow-600 transition-colors"
+              aria-label="Instagram"
+            >
+              <Instagram className="w-5 h-5" />
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/kadir-oguz-248075144/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-yellow-600 transition-colors"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="w-5 h-5" />
+            </a>
+          </div>
+        </div>
       </div>
     </header>
   );
