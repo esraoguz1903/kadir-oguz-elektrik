@@ -1,4 +1,4 @@
-import { Zap, Wrench, Lightbulb } from "lucide-react";
+import { Zap, Wrench, Lightbulb, Briefcase } from "lucide-react";
 
 export const services = [
   {
@@ -68,6 +68,27 @@ export const services = [
       "Asma Tavan Aydınlatması",
       "Bahçe ve Dış Mekan Aydınlatma",
       "Mağaza ve Vitrin Aydınlatması"
+    ]
+  },
+  {
+    id: "projects",
+    title: "Projelerimiz",
+    description: "Tamamladığımız başarılı projelerden örnekler ve referanslarımız.",
+    icon: Briefcase,
+    slug: "projelerimiz",
+    image: "/projelerimiz_arkaplan_1.jpeg", // Geçici olarak genel arka planı kullanıyorum
+    detailedDescription: `
+      Müşterilerimiz için gerçekleştirdiğimiz elektrik tamiri, montaj ve aydınlatma projelerinden kareler.
+      Her bir projede güvenlik, kalite ve müşteri memnuniyetini ön planda tutuyoruz.
+      
+      Yaptığımız işlerin kalitesini ve öncesi-sonrası dönüşümlerini inceleyerek bize güvenebilirsiniz.
+      Siz hayal edin, biz gerçekleştirelim.
+    `,
+    features: [
+      "Anahtar Teslim Elektrik Tesisatı",
+      "Ofis ve Mağaza Aydınlatma Projeleri",
+      "Ev Yenileme ve Tadilat İşleri",
+      "Güvenlik Sistemleri Montajı"
     ]
   },
 ];

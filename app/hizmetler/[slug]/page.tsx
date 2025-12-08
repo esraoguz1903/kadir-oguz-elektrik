@@ -66,15 +66,122 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-              <h2 className="text-2xl font-bold mb-6 text-gray-900">Neler Yapıyoruz?</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {service.features?.map((feature, idx) => (
-                  <div key={idx} className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-500 flex-shrink-0" />
-                    <span className="text-gray-700 font-medium">{feature}</span>
+              {slug === "projelerimiz" ? (
+                <>
+                  <h2 className="text-3xl font-bold mb-8 text-gray-900">Tamamlanan Projeler</h2>
+                  
+                  {/* Aydınlatma Grubu */}
+                  <div className="mb-12">
+                    <h3 className="text-xl font-semibold mb-4 text-yellow-600 flex items-center gap-2">
+                      <span className="w-2 h-8 bg-yellow-500 rounded-full"></span>
+                      Aydınlatma Çözümleri
+                    </h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="relative aspect-square md:aspect-video rounded-lg overflow-hidden group">
+                        <Image 
+                          src="/isikli_led.jpeg" 
+                          alt="Gizli Tavan LED Aydınlatma" 
+                          fill 
+                          className="object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                          <span className="text-white font-medium">LED Aydınlatma Uygulaması</span>
+                        </div>
+                      </div>
+                      
+                      <div className="relative aspect-square md:aspect-video rounded-lg overflow-hidden group">
+                        <Image 
+                          src="/projelerimiz_tavan_lambasi.jpeg" 
+                          alt="Tavan Armatür Montajı" 
+                          fill 
+                          className="object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                          <span className="text-white font-medium">Tavan Armatür Montajı</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                ))}
-              </div>
+
+                  {/* Montaj Grubu */}
+                  <div className="mb-12">
+                    <h3 className="text-xl font-semibold mb-4 text-yellow-600 flex items-center gap-2">
+                      <span className="w-2 h-8 bg-yellow-500 rounded-full"></span>
+                      Montaj ve Kurulum
+                    </h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="relative aspect-square md:aspect-video rounded-lg overflow-hidden group">
+                        <Image 
+                          src="/projelerimiz_avize.jpeg" 
+                          alt="Dekoratif Avize Montajı" 
+                          fill 
+                          className="object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                          <span className="text-white font-medium">Dekoratif Avize Montajı</span>
+                        </div>
+                      </div>
+
+                      <div className="relative aspect-square md:aspect-video rounded-lg overflow-hidden group">
+                        <Image 
+                          src="/projelerimiz_avize1.jpeg" 
+                          alt="Üçlü Avize Montajı" 
+                          fill 
+                          className="object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                          <span className="text-white font-medium">Üçlü Avize Montajı</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Tamir Grubu */}
+                  <div className="mb-8">
+                    <h3 className="text-xl font-semibold mb-4 text-yellow-600 flex items-center gap-2">
+                      <span className="w-2 h-8 bg-yellow-500 rounded-full"></span>
+                      Elektrik Tamiri & Tadilat
+                    </h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="relative aspect-square md:aspect-video rounded-lg overflow-hidden group">
+                        <Image 
+                          src="/projelerimiz_sigorta.jpeg" 
+                          alt="Sigorta Panosu Düzenleme" 
+                          fill 
+                          className="object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                          <span className="text-white font-medium">Sigorta Panosu Kurulumu</span>
+                        </div>
+                      </div>
+
+                      <div className="relative aspect-square md:aspect-video rounded-lg overflow-hidden group">
+                        <Image 
+                          src="/priz.jpeg" 
+                          alt="Anahtar ve Priz Montajı" 
+                          fill 
+                          className="object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                          <span className="text-white font-medium">Anahtar ve Priz Montajı</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <h2 className="text-2xl font-bold mb-6 text-gray-900">Neler Yapıyoruz?</h2>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {service.features?.map((feature, idx) => (
+                      <div key={idx} className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                        <CheckCircle2 className="w-5 h-5 text-yellow-500 flex-shrink-0" />
+                        <span className="text-gray-700 font-medium">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                </>
+              )}
             </div>
             
             <div className="flex gap-4 pt-4">

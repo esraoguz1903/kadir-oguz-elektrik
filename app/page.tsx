@@ -2,7 +2,6 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Hero } from "@/components/home/Hero";
 import { TrustSignals } from "@/components/home/TrustSignals";
 import { ServicesGrid } from "@/components/home/ServicesGrid";
-import { ProjectShowcase } from "@/components/home/ProjectShowcase";
 import { Testimonials } from "@/components/home/Testimonials";
 import { ContactForm } from "@/components/home/ContactForm";
 import { Footer } from "@/components/layout/Footer";
@@ -15,7 +14,6 @@ export default function Home() {
       <Hero />
       <TrustSignals />
       <ServicesGrid />
-      <ProjectShowcase />
       <Testimonials />
       <ContactForm />
       <Footer />

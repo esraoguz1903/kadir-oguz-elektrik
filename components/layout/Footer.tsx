@@ -50,9 +50,6 @@ export function Footer() {
                 <Link href="#services" className="text-gray-400 hover:text-yellow-500 transition-colors">Hizmetler</Link>
               </li>
               <li>
-                <Link href="#projects" className="text-gray-400 hover:text-yellow-500 transition-colors">Projeler</Link>
-              </li>
-              <li>
                 <Link href="#contact" className="text-gray-400 hover:text-yellow-500 transition-colors">İletişim</Link>
               </li>
             </ul>

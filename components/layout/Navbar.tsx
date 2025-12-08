@@ -53,9 +53,6 @@ export function Navbar() {
           <Link href="#services" className="text-sm font-medium hover:text-yellow-600 transition-colors">
             Hizmetler
           </Link>
-          <Link href="#projects" className="text-sm font-medium hover:text-yellow-600 transition-colors">
-            Projeler
-          </Link>
           <Link href="#testimonials" className="text-sm font-medium hover:text-yellow-600 transition-colors">
             Yorumlar
           </Link>
