@@ -13,13 +13,13 @@ export function Footer() {
               <div className="relative h-12 w-12 md:h-14 md:w-14">
                 <Image 
                   src="/logo.png" 
-                  alt="Oğuz Elektrik" 
+                  alt="OĞUZ ELEKTRİK" 
                   fill 
                   className="object-contain"
                 />
               </div>
               <span className="font-bold text-xl text-white">
-                Oğuz Elektrik
+                OĞUZ ELEKTRİK
               </span>
             </Link>
             <p className="text-gray-400 mb-6 leading-relaxed">

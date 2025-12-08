@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Oğuz Elektrik",
+  title: "OĞUZ ELEKTRİK",
   description: "7/24 Acil elektrikçi hizmeti. Ev ve iş yerleri için elektrik tamiri, montajı ve bakım hizmetleri. Hemen arayın!",
 };
 

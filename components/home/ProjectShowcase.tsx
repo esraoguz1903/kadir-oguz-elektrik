@@ -6,17 +6,17 @@ const projects = [
     id: 1,
     title: "Ofis Aydınlatma Yenileme",
     category: "Ticari",
-    imageBefore: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop",
-    imageAfter: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=800&auto=format&fit=crop",
+    imageBefore: "/isikli_led.jpeg",
+    imageAfter: "/isikli_led.jpeg",
     description: "Eski floresan aydınlatmalar modern LED paneller ile değiştirilerek %40 enerji tasarrufu sağlandı."
   },
   {
     id: 2,
-    title: "Akıllı Ev Sistemi Kurulumu",
+    title: "Avize Montajı",
     category: "Konut",
-    imageBefore: "https://images.unsplash.com/photo-1565514020125-2c66e7f96e8b?q=80&w=800&auto=format&fit=crop",
-    imageAfter: "https://images.unsplash.com/photo-1565514020125-2c66e7f96e8b?q=80&w=800&auto=format&fit=crop", 
-    description: "Tüm evin aydınlatma ve ısıtma sistemleri tek bir merkezden kontrol edilebilir hale getirildi."
+    imageBefore: "/avize.jpeg",
+    imageAfter: "/avize.jpeg", 
+    description: "Yeni taşınılan dairenin tüm avize ve aydınlatma montajları titizlikle yapıldı."
   }
 ];
 

@@ -38,13 +38,13 @@ export function Navbar() {
           <div className="relative h-12 w-12 md:h-14 md:w-14">
             <Image 
               src="/logo.png" 
-              alt="Oğuz Elektrik" 
+              alt="OĞUZ ELEKTRİK" 
               fill 
               className="object-contain"
             />
           </div>
           <span className={cn("font-bold text-xl", isScrolled ? "text-gray-900" : "text-gray-900")}>
-            Oğuz Elektrik
+            OĞUZ ELEKTRİK
           </span>
         </Link>
 
