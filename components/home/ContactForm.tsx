@@ -41,39 +41,64 @@ export function ContactForm() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">E-posta Gönderin</p>
-                  <p className="text-lg font-medium text-white">info@elektrikci.com</p>
+                  <p className="text-lg font-medium text-white">info@mersinoguzelektrik.com.tr</p>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="bg-white rounded-2xl p-8 shadow-xl text-gray-900">
-            <form className="space-y-6">
+            <form
+              className="space-y-6"
+              action="https://formspree.io/f/mvgevaez"
+              method="POST"
+              acceptCharset="UTF-8"
+            >
+              <input type="hidden" name="_subject" value="İletişim Formu - OĞUZ ELEKTRİK" />
+              <input type="hidden" name="_format" value="plain" />
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <Label htmlFor="name">Ad Soyad</Label>
-                  <Input id="name" placeholder="Adınız" />
+                  <Input id="name" name="Ad Soyad" placeholder="Adınız" required />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="phone">Telefon</Label>
-                  <Input id="phone" placeholder="0555..." />
+                  <Input
+                    id="phone"
+                    name="Telefon"
+                    placeholder="05xx xxx xx xx"
+                    inputMode="tel"
+                    required
+                  />
                 </div>
               </div>
               
               <div className="space-y-2">
                 <Label htmlFor="service">Hizmet Türü</Label>
-                <select id="service" className="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                <select
+                  id="service"
+                  name="Hizmet"
+                  className="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  required
+                >
                   <option value="">Seçiniz...</option>
-                  <option value="repair">Tamir & Bakım</option>
-                  <option value="installation">Montaj</option>
-                  <option value="project">Proje & Taahhüt</option>
-                  <option value="other">Diğer</option>
+                  <option value="Tamir & Bakım">Tamir & Bakım</option>
+                  <option value="Montaj">Montaj</option>
+                  <option value="Proje & Taahhüt">Proje & Taahhüt</option>
+                  <option value="Diğer">Diğer</option>
                 </select>
               </div>
               
               <div className="space-y-2">
                 <Label htmlFor="message">Mesajınız</Label>
-                <Textarea id="message" placeholder="Sorununuzu kısaca açıklayın..." className="min-h-[100px]" />
+                <Textarea
+                  id="message"
+                  name="Mesaj"
+                  placeholder="Sorununuzu kısaca açıklayın..."
+                  className="min-h-[100px]"
+                  required
+                />
               </div>
 
               <Button type="submit" className="w-full bg-yellow-500 hover:bg-yellow-600 text-white text-lg py-6">
