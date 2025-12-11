@@ -78,8 +78,7 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-yellow-500 mt-1 flex-shrink-0" />
                 <span className="text-gray-400">
-                  Örnek Mahallesi, Elektrik Caddesi No: 123,
-                  <br />İstanbul, Türkiye
+                  Yusuf Kılıç Mahallesi 217. Cadde No: 11A Toroslar/Mersin
                 </span>
               </li>
               <li className="flex items-center gap-3">
