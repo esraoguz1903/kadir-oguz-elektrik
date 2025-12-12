@@ -41,7 +41,12 @@ export function ContactForm() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">E-posta Gönderin</p>
-                  <p className="text-lg font-medium text-white">info@mersinoguzelektrik.com.tr</p>
+                  <a
+                    href="mailto:info@mersinoguzelektrik.com.tr"
+                    className="text-lg font-medium text-white hover:text-yellow-400 transition-colors"
+                  >
+                    info@mersinoguzelektrik.com.tr
+                  </a>
                 </div>
               </div>
             </div>
