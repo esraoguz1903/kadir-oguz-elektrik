@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Facebook, Instagram, Linkedin, MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
+import { services } from "@/data/services";
 
 export function Footer() {
   return (
@@ -26,17 +27,6 @@ export function Footer() {
               Profesyonel, güvenilir ve hızlı elektrik çözümleri. 
               Her zaman yanınızdayız.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-500 hover:text-white transition-all duration-300">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-500 hover:text-white transition-all duration-300">
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-500 hover:text-white transition-all duration-300">
-                <Linkedin className="w-5 h-5" />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -59,15 +49,13 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-6 text-white">Hizmetlerimiz</h3>
             <ul className="space-y-4">
-              <li>
-                <Link href="/hizmetler/electrical-repair" className="text-gray-400 hover:text-yellow-500 transition-colors">Elektrik Tamiri</Link>
-              </li>
-              <li>
-                <Link href="/hizmetler/installation" className="text-gray-400 hover:text-yellow-500 transition-colors">Montaj & Kurulum</Link>
-              </li>
-              <li>
-                <Link href="/hizmetler/lighting-solutions" className="text-gray-400 hover:text-yellow-500 transition-colors">Aydınlatma</Link>
-              </li>
+              {services.map((service) => (
+                <li key={service.id}>
+                  <Link href={`/hizmetler/${service.slug}`} className="text-gray-400 hover:text-yellow-500 transition-colors">
+                    {service.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
